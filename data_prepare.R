@@ -18,6 +18,8 @@ mod.data =
   mod.data %>% mutate(Habitat = recode(Habitaatti, 
                              "6" = "Coastal",
                              "7" = "Coastal",
+                             "5" = "Coastal",
+                             "1" = "Inland",
                              "2" = "Inland",
                              "3" = "Inland",
                              "4" = "Inland",
@@ -32,3 +34,5 @@ mod.data =
                                  "1" = "Non-manage",
                                  .default = "Full-protect")) 
 summary(mod.data)
+
+
